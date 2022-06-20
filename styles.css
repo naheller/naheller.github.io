@@ -1,0 +1,74 @@
+* {
+   font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+}
+
+h1 {
+   font-size: 2.15rem;
+}
+
+h2 {
+   font-size: 1.15rem;
+}
+
+a {
+   text-decoration: none;
+}
+
+svg {
+   width: 1rem;
+   margin: 0 4px;
+}
+
+.container-outer {
+   position: relative;
+   height: 100vh;
+}
+
+.container-inner {
+   position: absolute;
+   top: 50%;
+   left: 0;
+   right: 0;
+   transform: translateY(-50%);
+   text-align: center;
+   max-width: 500px;
+   padding: 1rem;
+   margin: auto;
+}
+
+.nate-photo {
+   width: 150px;
+   border-radius: 100%;
+}
+
+.social-links {
+   padding-top: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+   .container-inner {
+      max-width: 400px
+   }
+
+   h1 {
+      font-size: 1.85rem;
+   }
+
+   h2 {
+      font-size: 1rem;
+   }
+}
+
+@media only screen and (max-width: 600px) {
+   .container-inner {
+      max-width: 350px
+   }
+
+   h1 {
+      font-size: 1.7rem;
+   }
+
+   h2 {
+      font-size: 0.85rem;
+   }
+}

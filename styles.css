@@ -2,11 +2,7 @@
    font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
 }
 
-h1 {
-   font-size: 2.15rem;
-}
-
-h2 {
+p {
    font-size: 1.15rem;
 }
 
@@ -51,10 +47,10 @@ svg {
    }
 
    h1 {
-      font-size: 1.85rem;
+      font-size: 1.75rem;
    }
 
-   h2 {
+   p {
       font-size: 1rem;
    }
 }
@@ -65,10 +61,10 @@ svg {
    }
 
    h1 {
-      font-size: 1.7rem;
+      font-size: 1.5rem;
    }
 
-   h2 {
+   p {
       font-size: 0.85rem;
    }
 }

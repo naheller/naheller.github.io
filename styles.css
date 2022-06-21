@@ -6,15 +6,6 @@ p {
    font-size: 1.15rem;
 }
 
-a {
-   text-decoration: none;
-}
-
-svg {
-   width: 1rem;
-   margin: 0 4px;
-}
-
 .container-outer {
    position: relative;
    height: 100vh;
@@ -39,6 +30,19 @@ svg {
 
 .social-links {
    padding-top: 1rem;
+}
+
+.social-links > a {
+   margin: 0 4px;
+   text-decoration: none;
+}
+
+.social-links svg {
+   width: 1rem;
+}
+
+.social-icon:hover {
+   fill: #FFAD02;
 }
 
 @media only screen and (max-width: 768px) {

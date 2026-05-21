@@ -1,20 +1,13 @@
-@font-face {
-  font-family: "New York";
-  src: url("NewYork.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+@import "./colors.css";
+
+*, ::before, ::after {
+    box-sizing: border-box;
 }
 
-* {
-  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
-    helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
-    sans-serif;
-}
-
-h1 {
-  font-family: New York, Iowan Old Style, Apple Garamond, Baskerville,
-    Times New Roman, Droid Serif, Times, Source Serif Pro, serif,
-    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+body {
+    font-size: 18px;
+    font-family: system-ui, sans-serif;
+    margin: 0;
 }
 
 p {
@@ -24,7 +17,7 @@ p {
 .container-outer {
   position: relative;
   height: 100vh;
-  background-color: #f2f0e6;
+  background-color: light-dark(var(--stone-9), var(--zinc-2));
 }
 
 .container-inner {
@@ -33,58 +26,57 @@ p {
   left: 0;
   right: 0;
   transform: translateY(-50%);
-  width: 300px;
+  max-width: 400px;
   margin: auto;
-  padding: 3rem 2rem;
+  padding: 3rem 4rem;
   text-align: center;
-  border: 1px solid #dbd7d2;
-  border-radius: 10px;
-  background-color: white;
+  border: 1px solid light-dark(var(--stone-8), var(--zinc-5));
+  border-radius: 1rem;
+  color: light-dark(var(--stone-4), var(--zinc-9));
+  background-color: light-dark(var(--stone-10), var(--zinc-3));
 }
 
 .nate-photo {
   width: 150px;
-  border: 1px solid #dbd7d2;
+  border: 1px solid light-dark(var(--stone-8), var(--zinc-5));
   border-radius: 100%;
-  margin: 0 0 2rem 0;
-}
-
-.header-text {
   margin: 0 0 1.5rem 0;
 }
 
+.header-text {
+  margin: 0 0 1rem 0;
+}
+
 .body-text {
-  margin: 0 0 2.25rem 0;
+    font-style: italic;
+    margin: 0 0 2.5rem 0;
 }
 
-.social-links {
-  margin: 0;
+.button-link {
+    display: block;
+    text-decoration: none;
+    /* font-size: 0.95rem; */
+    color: light-dark(var(--accent-light), var(--accent-dark));
+    border: 1px solid light-dark(var(--accent-light), var(--accent-dark));
+    border-radius: 0.75rem;
+    height: 3rem;
+    line-height: 3rem;
 }
 
-.social-links > a {
-  margin: 0 0.25rem;
-  text-decoration: none;
+.button-link:not(:last-child) {
+    margin-bottom: 0.75rem;
 }
 
-.social-icon {
-  width: 1rem;
-}
-
-.icon-mail {
-  width: 1.1rem;
-}
-
-svg:hover {
-  fill: #ffad02;
+.button-link:hover {
+    background-color: light-dark(var(--stone-9), var(--zinc-2));
 }
 
 @media only screen and (max-width: 425px) {
   .container-outer {
-    background-color: white;
+    background-color: light-dark(var(--stone-10), var(--zinc-3));
   }
 
   .container-inner {
-    width: auto;
     border: none;
   }
 

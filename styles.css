@@ -44,7 +44,8 @@ p {
 }
 
 .header-text {
-  margin: 0 0 1rem 0;
+    font-size: 1.95rem;
+    margin: 0 0 1rem 0;
 }
 
 .body-text {
@@ -55,7 +56,6 @@ p {
 .button-link {
     display: block;
     text-decoration: none;
-    /* font-size: 0.95rem; */
     color: light-dark(var(--accent-light), var(--accent-dark));
     border: 1px solid light-dark(var(--accent-light), var(--accent-dark));
     border-radius: 0.75rem;
@@ -68,16 +68,19 @@ p {
 }
 
 .button-link:hover {
-    background-color: light-dark(var(--stone-9), var(--zinc-2));
+    background-color: light-dark(var(--accent-light-hover), var(--accent-dark-hover));
 }
 
 @media only screen and (max-width: 425px) {
-  .container-outer {
-    background-color: light-dark(var(--stone-10), var(--zinc-3));
-  }
-
   .container-inner {
-    border: none;
+      position: unset;
+      transform: unset;
+      border: none;
+      border-radius: unset;
+      width: 100vw;
+      max-width: 100vw;
+      height: 100vh;
+      max-height: 100vh;
   }
 
   .nate-photo {

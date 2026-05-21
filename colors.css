@@ -26,4 +26,7 @@
 
     --accent-dark: oklch(83.7% 0.128 66.29);
     --accent-light: oklch(51.1% 0.096 186.391);
+    
+    --accent-light-hover: oklch(93.33% 0.009 181.5);
+    --accent-dark-hover: oklch(31.9% 0.016 74.8);
 }

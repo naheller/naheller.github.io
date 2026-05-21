@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-html, body, .container-outer {
-    max-height: 100vh;
-    max-width: 100vw;
-}
-
 body {
     font-size: 18px;
     font-family: system-ui, sans-serif;
@@ -54,7 +49,6 @@ p {
 }
 
 .body-text {
-    font-style: italic;
     margin: 0 0 2.5rem 0;
 }
 
@@ -78,16 +72,13 @@ p {
 
 @media only screen and (max-width: 425px) {
   .container-inner {
-      position: unset;
-      transform: unset;
       border: none;
-      border-radius: unset;
-      width: 100vw;
-      max-width: 100vw;
-      height: 100vh;
-      max-height: 100vh;
   }
 
+  .container-outer {
+      background-color: light-dark(var(--stone-10), var(--zinc-3));
+  }
+  
   .nate-photo {
     border: none;
   }

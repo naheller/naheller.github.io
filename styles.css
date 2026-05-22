@@ -73,6 +73,7 @@ p {
 @media only screen and (max-width: 425px) {
   .container-inner {
       border: none;
+      padding: 0 4rem;
   }
 
   .container-outer {

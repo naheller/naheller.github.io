@@ -1,86 +1,45 @@
-@import "./colors.css";
+@font-face {
+    font-display: swap;
+    font-family: "Space Grotesk";
+    font-style: normal;
+    font-weight: 400;
+    src: url("space-grotesk-400.woff2") format("woff2");
+}
 
-*, ::before, ::after {
-    box-sizing: border-box;
+:root {
+    color-scheme: light dark;
+
+    --color-light: #e5e5e5;
+    --color-dark: #262626;
+ 
+    --font-sans-serif: "Space Grotesk", system-ui, sans-serif;
+    --font-serif: ui-serif, serif;
+    --font-monospace: ui-monospace, monospace;
 }
 
 body {
-    font-size: 18px;
-    font-family: system-ui, sans-serif;
-    margin: 0;
+    font-size: 20px;
+    font-family: "Space Grotesk";
+    line-height: 1.6;
+    max-width: 700px;
+    margin: auto;
+    color: light-dark(var(--color-dark), var(--color-light));
+    background-color: light-dark(var(--color-light), var(--color-dark));
+    padding: 3em 1em;
 }
 
-p {
-  line-height: 1.25rem;
+a {
+    color: light-dark(var(--color-dark), var(--color-light));
+    text-underline-offset: 0.1em;
 }
 
-.container-outer {
-  position: relative;
-  height: 100vh;
-  background-color: light-dark(var(--stone-9), var(--zinc-2));
+img {
+    max-width: 100px;
+    border-radius: 100%;
 }
 
-.container-inner {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  transform: translateY(-50%);
-  max-width: 400px;
-  margin: auto;
-  padding: 3rem 4rem;
-  text-align: center;
-  border: 1px solid light-dark(var(--stone-8), var(--zinc-5));
-  border-radius: 1rem;
-  color: light-dark(var(--stone-4), var(--zinc-9));
-  background-color: light-dark(var(--stone-10), var(--zinc-3));
-}
-
-.nate-photo {
-  width: 150px;
-  border: 1px solid light-dark(var(--stone-8), var(--zinc-5));
-  border-radius: 100%;
-  margin: 0 0 1.5rem 0;
-}
-
-.header-text {
-    font-size: 1.95rem;
-    margin: 0 0 1rem 0;
-}
-
-.body-text {
-    margin: 0 0 2.5rem 0;
-}
-
-.button-link {
-    display: block;
-    text-decoration: none;
-    color: light-dark(var(--accent-light), var(--accent-dark));
-    border: 1px solid light-dark(var(--accent-light), var(--accent-dark));
-    border-radius: 0.75rem;
-    height: 3rem;
-    line-height: 3rem;
-}
-
-.button-link:not(:last-child) {
-    margin-bottom: 0.75rem;
-}
-
-.button-link:hover {
-    background-color: light-dark(var(--accent-light-hover), var(--accent-dark-hover));
-}
-
-@media only screen and (max-width: 425px) {
-  .container-inner {
-      border: none;
-      padding: 0 4rem;
-  }
-
-  .container-outer {
-      background-color: light-dark(var(--stone-10), var(--zinc-3));
-  }
-  
-  .nate-photo {
-    border: none;
-  }
+@media (max-width: 500px) {
+    body {
+	font-size: 18px;
+    }
 }

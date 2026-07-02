@@ -6,19 +6,34 @@
     <meta name="description" content="Personal site of Nathan Heller">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <link
-      rel="preload"
-      href="space-grotesk-400.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="img/nate.ico" />
+    <link rel="icon" type="image/webp" href="nate.webp" />
+    <style>
+      :root {
+	color-scheme: light dark;
+      }
+      body {
+	font-size: 20px;
+	font-family: Georgia, serif;
+	line-height: 1.6;
+	max-width: 700px;
+	margin: auto;
+	color: light-dark(#0a0a0a, #fafafa);
+	background-color: light-dark(#fafafa, #0a0a0a);
+	padding: 3em 1em;
+      }
+      img {
+	max-width: 100px;
+	border-radius: 100%;
+      }
+      @media (max-width: 500px) {
+	body {
+	  font-size: 18px;
+	}
+      }
+    </style>
   </head>
     <main>
-      <img src="img/nate.webp" class="nate-photo" alt="Photo of Nathan Heller" />
+      <img src="nate.webp" class="nate-photo" alt="Photo of Nathan Heller" />
       <p>I'm Nathan Heller, a software engineer living in <s>California</s> <s>Oregon</s> <s>New York</s> my suitcase.</p>
       <p>Currently traveling the world with my wife as we look for somewhere new to call home.</p>
       <p>You can find me writing on my <a href="https://nate.mataroa.blog">blog</a> and coding on <a href="https://github.com/naheller">github</a>. My work history is on <a href="https://linkedin.com/in/nathanheller">linkedin</a> and my <a href="Nathan-Heller-Resume.pdf">resume</a>.</p>

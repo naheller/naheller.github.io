@@ -52,7 +52,7 @@ a {
     text-decoration: none;
     padding: 0.5em 1em;
     margin: 0.5em auto;
-    min-width: 10em;
+    min-width: 14em;
     border: 0.1em solid light-dark(var(--light-mode-text), var(--dark-mode-text));
     border-radius: 0.5em;
 }

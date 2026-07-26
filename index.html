@@ -17,11 +17,19 @@
   </head>
     <main>
       <img src="nate-2.webp" alt="Drawing of Nathan Heller" />
-      <p>I'm Nathan Heller, a software engineer living in <s>California</s> <s>Oregon</s> <s>New York</s> my suitcase.</p>
-      <p>Currently traveling the world with my wife as we look for somewhere new to call home.</p>
-      <p>I sometimes share little updates on <a href="https://sunny.garden/@nate">mastodon</a> and longer pieces on my <a href="https://nate.mataroa.blog">blog</a>.</p>
-      <p>My coding projects are on <a href="https://github.com/naheller">github</a> and my work history is on <a href="https://linkedin.com/in/nathanheller">linkedin</a>.</p>
-      <p>Say hello@naheller.com. Let's chat!</p>
+      <a href="https://nate.spot">blog</a>
+      <a href="https://www.blipfoto.com/natedog">photos</a>
+      <a href="https://sunny.garden/@nate">mastodon</a>
+      <a href="https://github.com/naheller">github</a>
+      <a href="https://linkedin.com/in/nathanheller">linkedin</a>
+      <a id="email-link" href="#">email</a>
     </main>
+    <script>
+      const emailLink = document.getElementById("email-link");
+      emailLink.addEventListener("click", (e) => {
+	  e.preventDefault();
+	  emailLink.textContent = "hello [at] this domain";
+      });
+    </script>
   </body>
 </html>

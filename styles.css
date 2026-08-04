@@ -14,10 +14,10 @@
     --light-mode-text: #292524;
     --light-mode-text-alt: #57534e;
 
-    --dark-mode-bg-code: #27272a;
-    --dark-mode-bg: #3f3f46;
-    --dark-mode-text: #f4f4f5;
-    --dark-mode-text-alt: #d4d4d8;
+    --dark-mode-bg-code: #22292b;
+    --dark-mode-bg: #394447;
+    --dark-mode-text: #f1f3f3;
+    --dark-mode-text-alt: #d0d6d8;
 }
 
 *,

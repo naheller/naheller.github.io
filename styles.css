@@ -37,7 +37,7 @@ h1 {
 
 a {
     display: block;
-    color: light-dark(var(--dark-mode-text), var(--dark-mode-text));
+    color: light-dark(var(--light-mode-text), var(--dark-mode-text));
     text-underline-offset: 0.25ex;
 }
 

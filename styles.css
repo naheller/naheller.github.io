@@ -49,3 +49,9 @@ a:hover {
     color: light-dark(var(--lm-accent), var(--dm-accent));
     user-select: none;
 }
+
+@media (max-width: 640px) {
+    body {
+        font-size: 1.7rem;
+    }
+}

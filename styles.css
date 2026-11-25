@@ -57,13 +57,14 @@ header {
     margin-right: 0.25rem;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 750px) {
     #content {
         font-size: 1.25rem;
         padding: 1rem;
         inset: initial;
         position: initial;
         background: none;
+        width: 100%;
     }
 
     #toasters {

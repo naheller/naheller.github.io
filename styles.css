@@ -1,39 +1,51 @@
-:root {
-    color-scheme: light dark;
-
-    --font-mono: SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-    --font-sans: -apple-system, BlinkMacSystemFont, Segoe UI, Noto Sans, Helvetica, Arial, sans-serif;
-    --font-serif: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
-}
-
 *,
 ::before,
 ::after {
   box-sizing: border-box;
 }
 
-html {
-    font-size: 62.5%;
-    background-image: light-dark(url("images/CLOUD.jpg"), url("images/DOG.png"));
-}
-
+html,
 body {
-    font-family: var(--font-sans);
-    font-size: 2rem;
-    color: light-dark(black, white);
-    background-color: light-dark(rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0.85));
-    line-height: 1.6;
-    max-width: 70ch;
-    margin: auto;
-    padding: 1rem 1rem 3rem 1rem;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: #111;
 }
 
-header img {
+#content {
+    position: fixed;
+    inset: 0px;
+    width: 700px;
+    height: 500px;
+    max-width: 100vw;
+    max-height: 100dvh;
+    margin: auto;
+    padding: 2rem;
+    z-index: 1;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.85);
+    font-family: serif;
+    font-size: 2rem;
+    line-height: 1.25;
+}
+
+#logo {
     max-width: 100%;
 }
 
-h1 {
-    font-size: 1.5em;
+a {
+    color: white;
+    text-underline-offset: 0.25ex;
+}
+
+a:hover {
+    color: darkorange;
+}
+
+header {
+    display: flex;
+    justify-content: center;
 }
 
 footer {
@@ -41,7 +53,9 @@ footer {
 }
 
 @media (max-width: 640px) {
-    body {
-        font-size: 1.8rem;
+    #content {
+        font-size: 1.7rem;
+        padding: 1rem;
+        inset: initial;
     }
 }

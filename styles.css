@@ -18,14 +18,14 @@ body {
 #content {
   position: relative;
   z-index: 2;
-  width: min(750px, 100%);
+  width: min(700px, 100%);
   min-height: fit-content;
   margin: 2rem auto;
   padding: 1rem;
   color: white;
   background-color: rgba(0, 0, 0, 0.5);
   font-family: serif;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   line-height: 1.3;
   text-align: center;
   display: flex;
@@ -54,9 +54,9 @@ a:hover {
     color: darkorange;
 }
 
-header {
-    display: flex;
-    justify-content: center;
+h1 {
+    font-size: 2rem;
+    margin-top: 0;
 }
 
 #webrings, #btns, #d2 {
@@ -79,7 +79,7 @@ ring {
     width: 100%;
     padding: 0.25rem 0.5rem;
     font-family: sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     border-radius: 0.5rem;
     margin-top: 0.5rem;
 }
@@ -103,7 +103,15 @@ ring.indie a:hover, ring.hotline a:hover {
     color: black;
 }
 
-@media (max-width: 750px) {
+li::marker {
+    content: none;
+}
+
+ul, ol {
+    padding-inline-start: 0;
+}
+
+@media (max-width: 700px) {
     #content {
         margin: 1rem auto;
         font-size: 1.2rem;
@@ -115,6 +123,6 @@ ring.indie a:hover, ring.hotline a:hover {
     }
 
     ring {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 }
